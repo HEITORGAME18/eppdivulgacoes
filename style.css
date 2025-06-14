@@ -1,77 +1,151 @@
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 10px;
-}
-.backgroundimg {
-   background-color:  blue;
-   
-}
 
 
-body {
-   background-color: rgb(245, 173, 121);
-     width: 1.6;
-    height: 0 auto;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.menu {
-    height: 150px;
-    background-color: rgb(0, 0, 0);
-    top: 60px;
-    text-shadow: 1px 1px 90px rgb(255, 255, 255);
-    text-align: center;
-    
-}
-.a1 {
- height: 30px;
- border-radius: 30px;
- height: 100px;
- 
-}
-h1 {
-    font-weight: bold;
-}
-.a2 {
-    margin-top: -130px;
-}
-.button_a {
-    background-color: coral;
-    border-radius: 30px;
-    padding: 16px;
-}
-.a3 {
-    margin-left: 50px;
-}
-.EPPpreto {
-  align-content: center;
-}
+    body {
+      background-color: #111;
+      margin: 0;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
 
-.end {
-    background-color: rgb(43, 42, 42);
-    font-weight: bold;
-    color: white;
-    position: relative;
-}
+    .menu {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
 
-main {
+    .menu img {
+      width: 90px;
+    }
+
+    .menu a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 12px;
+      transition: background 0.3s, color 0.3s;
+      border-radius: 5px;
+      font-family: 'Winter Lemon', cursive;
+    }
+
+    .menu a:hover {
+      background-color: #ffffff20;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Winter Lemon', cursive;
+      color: #ffb380;
+    }
+
+    main {
       max-width: 800px;
+      width: 90%;
       margin: 40px auto;
       padding: 20px;
-      background: white;
+      background: #1e1e1e;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      text-align: center;
     }
 
-     p {
-      line-height: 1.6;
+    p, ul {
+      color: #ddd;
     }
-    footer {
+
+    ul {
+      list-style-position: inside;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .a3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+    }
+
+    .button_a {
+      background-color: #ff7f50;
+      border-radius: 30px;
+      padding: 16px 24px;
+      color: white;
+      font-weight: bold;
       text-align: center;
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 14px;
-      color: #777;
+      transition: background 0.3s;
+      font-family: 'Winter Lemon', cursive;
+      text-decoration: none;
+    }
+
+    .button_a:hover {
+      background-color: #e46b3a;
+    }
+
+    .end {
+      background-color: #000;
+      color: white;
+      padding: 30px 10px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .end img {
+      width: 50px;
+      border-radius: 30px;
+      margin: 10px auto;
+    }
+
+    .end .logo {
+      width: 90px;
+    }
+
+    .imb {
+      animation: gire 2s infinite linear;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @keyframes gire {
+      0% { transform: rotateZ(0deg); }
+      50% {transform: rotateZ(160deg);}
+      100% { transform: rotateZ(360deg); }
+    }
+
+    @media (max-width: 800px) {
+      .menu img {
+        width: 70px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 15px;
+        margin: 20px;
+      }
+
+      h1, h2 {
+        font-size: 1.2em;
+      }
+
+      .button_a {
+        padding: 12px;
+        font-size: 0.9em;
+      }
+
+      .end img,
+      .end .logo {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
