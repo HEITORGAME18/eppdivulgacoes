@@ -3,235 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>EPP divulgações</title>
-  <link rel="icon" href="EPPbranco.png" />
- 
-
+  <title>inicio - EPP divulgações</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="imagens/EPPbranco.png" />
   <style>
-@font-face {
-  font-family: 'Winter Lemon';
-  src: url('Winter\ Lemon.ttf') format('truetype');
-}
-
-
-
-
-    /* Links */
-    a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      padding: 10px;
-      text-align: center;
+    @font-face {
+      font-family: 'Winter Lemon';
+      src: url('assets/Winter Lemon.ttf') format('truetype');
     }
-
-    body {
-      background-color: rgb(245, 173, 121);
-      margin: 0;
-      font-family:  'Lucida Sans', Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-    }
-
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-    }
-
-    /* Menu */
-     .menu {
-    background-color: black;
-      text-align: center;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-      width: 100%;
-    }
-    
-
-    .menu img {
-      width: 90px;
-    }
-
-    .a1 {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-
-    .a2 {
-      text-align: center;
-      color: white;
-      font-family: 'Winter Lemon', cursive;
-    }
-
-    h1 {
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .button_a {
-      background-color: coral;
-      border-radius: 30px;
-      padding: 16px 24px;
-      color: white;
-      font-weight: bold;
-      text-align: center;
-      transition: background 0.3s;
-    }
-
-    .button_a:hover {
-      background-color: #e46b3a;
-    }
-
-    .a3 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin: 30px 0;
-    }
-
-    .end {
-      background-color: #2b2a2a;
-      color: white;
-      padding: 30px 10px;
-      text-align: center;
-      width: 100%;
-    }
-
-    .end img {
-      width: 50px;
-      border-radius: 30px;
-      margin: 10px auto;
-    }
-
-    .end .logo {
-      width: 90px;
-    }
-
-    main {
-      max-width: 800px;
-      width: 90%;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    ul {
-      list-style-position: inside;
-      padding: 0;
-      margin: 0 auto;
-      display: inline-block;
-      text-align: left;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 14px;
-      color: #777;
-    }
-
-    /* Responsivo */
-    @media (max-width: 800px) {
-      .menu img {
-        width: 70px;
-      }
-    }
-
-
-
-    @media (max-width: 480px) {
-      main {
-        padding: 15px;
-        margin: 20px;
-      }
-
-      h1, h2 {
-        font-size: 1.2em;
-      }
-
-      .button_a {
-        padding: 12px;
-        font-size: 0.9em;
-      }
-
-      .end img,
-      .end .logo {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-      .imb {
-      animation-name: gire;
-      animation-duration: 2s;          /* tempo de uma volta completa */
-      animation-iteration-count: infinite;
-      cursor: pointer;
-      display: block;
-    }
-
-    
-        .imb {
-      animation-name: gire;
-      animation-duration: 2s;          /* tempo de uma volta completa */
-      animation-iteration-count: infinite;
-      cursor: pointer;
-      display: block;
-    }
-
-    @keyframes gire {
-      0%   { transform: rotatez(0deg); }
-      50% { transform: rotatez(180deg); }
-      100% { transform: rotatez(360deg); }
-    }
-   
-    .menu a {
-      color: var(--branco);
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0 15px;
-      padding: 8px 12px;
-      transition: background 0.3s, color 0.3s;
-      border-radius: 5px;
-    }
-
-    .menu a:hover {
-      background-color: #ffffff20;
-    }
-
   </style>
 </head>
-<body>
+<body id="mudarfunco">
   <div class="menu">
-  <img style="width: 90px;" src="EPPbranco.png" alt="EPPbranco">
-      <a class="a2" style="color: white;" href="index.html">Inicio</a>
-      <a class="a2" style="color: white;" href="planos.html">Planos</a>
-      <a class="a2" style="color: white;" href="https://discord.gg/eJHfMf3xRH">Discord</a>
-    </div>
- 
+    <img src="imagens/EPPbranco.png" alt="EPPbranco">
+    <br>
+   <a href="menu.html">Inicio</a>
+    <a href="planos.html">Planos</a>
+    <a href="https://discord.gg/eJHfMf3xRH">Discord</a>
+    <br>
+    <br>
+   
 
-  <h1>EPP divulgações</h1>
+  </div>
 
-  <header>
-    <h1 style=" font-family: 'Winter Lemon', cursive;">Bem-vindo ao EPP Divulgações</h1>
-  </header>
+  <h1 style="font-family: winter lemon;">EPP divulgações</h1>
+
 
   <main>
-    <h2>O que é o EPP Divulgações?</h2>
-    <p>
+    <h2 style="font-family: winter lemon;">O que é o EPP?</h2>
+    <p id="texto">
       O EPP Divulgações nasceu com o objetivo de conectar servidores e comunidades no Discord através de parcerias eficientes, divulgação estratégica e apoio personalizado.
     </p>
 
@@ -243,25 +43,30 @@
       <li>Divulgações <strong>automáticas</strong> e manuais</li>
       <li>Suporte rápido e <strong>profissional</strong></li>
     </ul>
+<hr>
+<p>
+  Esqueceu, temos nossos planos! para divulgar seu servidor cada um por 4.99$ aproveite e venha aqui nos <a style="color: white; font-family: 'Winter Lemon';" href="planos.html">Planos</a>!
+    <h2>Junte-se!</h2></p>
 
-    <h2>Junte-se a nós!</h2>
     <p>
-      Faça parte do nosso servidor, envie sua divulgação ou solicite uma parceria agora mesmo.
+      Faça parte do nosso servidor, envie uma divulgação ou solicite uma parceria agora mesmo.
     </p>
   </main>
 
   <div class="a3">
-    <a class="button_a" href="https://discord.gg/eJHfMf3xRH" target="_blank" style=" font-family: 'Winter Lemon', cursive;">Participe</a>
-    <a class="button_a" href="sobrenos.html"  style=" font-family: 'Winter Lemon', cursive;">Sobre nós</a>
+    <a class="button_a" href="https://discord.gg/eJHfMf3xRH" target="_blank">Participe</a>
+    <a class="button_a" href="sobrenos.html" style="font-family: winter lemon;">Sobre nós</a>
   </div>
-
+<h1 style="text-align: center;">Trailer</h1>
+<video src="" width="100px"></video>
   <div class="end">
-    <h2 style=" font-family: 'Winter Lemon', cursive;">Redes sociais</h2>
-    <a href="https://discord.gg/eJHfMf3xRH"><img class="imb" src="discord.png" alt="Discord" /></a>
-   <hr>
-    <img class="logo" src="EPPbranco.png" alt="EPPbranco" />
-    <p style="font-weight: bold;  font-family: 'Winter Lemon', cursive;">© 2025 EPP divulgações - Todos os direitos reservados.</p>
+    <h2>Redes sociais</h2>
+    <a href="https://discord.gg/eJHfMf3xRH"><img class="imb" src="imagens/discord.png" alt="Discord" /></a>
+    <hr>
+    <img class="logo" src="imagens/EPPbranco.png" alt="EPPbranco" />
+    <p><strong>© 2025 EPP divulgações - Todos os direitos reservados.</strong></p>
     <hr />
   </div>
+  <script src="javascript/script.js"></script>
 </body>
 </html>
