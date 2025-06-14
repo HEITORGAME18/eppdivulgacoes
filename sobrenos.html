@@ -1,108 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós</title>
-    <link rel="icon" href="EPPbranco.png"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre nós - EPP divulgações</title>
+    <link rel="icon" href="imagens/EPPbranco.png" />
     <style>
-       
-        body {
+        @font-face {
             font-family: 'Winter Lemon';
-            background-color: rgb(245, 173, 121);
-            margin: 0;
+            src: url('assets/Winter Lemon.ttf') format('truetype');
+        }
+        body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #111; /* fundo preto */
+            color: #eee; /* texto claro */
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            width: 100%;
+            background-color: #222; /* cinza bem escuro */
+            text-align: center;
+            color: #eee;
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+        .menu img {
+            vertical-align: middle;
+            cursor: pointer;
+            width: 90px;
+        }
+        .menu a {
+            color: #eee;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 12px;
+            font-family: 'Winter Lemon', cursive;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .menu a:hover {
+            background-color: #ffffff20;
         }
 
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 10px;
-        }
-@font-face {
-  font-family: 'Winter Lemon';
-  src: url('Winter\ Lemon.ttf') format('truetype');
-}
         .container {
             max-width: 800px;
             margin: 40px auto;
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: #222; /* fundo escuro da box */
             border-radius: 10px;
-            padding: 20px;
-            color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            padding: 30px 25px;
+            color: #eee;
+            box-shadow: 0 0 15px #000a;
+            font-family: 'Winter Lemon', cursive;
         }
 
         h1, h2 {
             text-align: center;
-            font-family: 'Winter Lemon'
+            font-family: 'Winter Lemon', cursive;
+            margin-bottom: 20px;
+            color: #ff7c00; /* laranja vibrante */
         }
-
+        h3.section-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #ffa64d;
+        }
+        p, li {
+            font-family: 'Winter Lemon', cursive;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ddd;
+        }
         ul {
             list-style-type: disc;
-            padding-left: 20px;
+            padding-left: 25px;
         }
-
         li {
-            margin-bottom: 10px;
-            font-family: 'Winter Lemon'
+            margin-bottom: 12px;
         }
 
-        .section-title {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            text-align: center;
+        @media (max-width: 480px) {
+            .container {
+                margin: 20px 15px;
+                padding: 20px 15px;
+            }
+            .menu a {
+                margin: 0 8px;
+                padding: 6px 8px;
+            }
         }
-         .menu {
-     width: 100%;
-      background-color: rgb(51, 47, 47);
-     text-align: center;
-      color: azure;
-      height: 150px;
-    }
-    @media (max-width: 480px) {
-    main {
-        padding: 15px;
-        margin: 20px;
-    } }
-
-    .menu {
-    background-color: black;
-      text-align: center;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-      width: 100%;
-    }
- .menu a {
-      color: var(--branco);
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0 15px;
-      padding: 8px 12px;
-      transition: background 0.3s, color 0.3s;
-      border-radius: 5px;
-    }
-
-    .menu a:hover {
-      background-color: #ffffff20;
-    }
     </style>
 </head>
 <body>
     <div class="menu">
-        <img src="EPPbranco.png" alt="uma foto de epp Divulgações!" width="90px" >
-        <div class="a1">
-        <a class="a2"  href="index.html" style="text-decoration: none;    font-family: 'Winter Lemon';" >inicio</a>&nbsp
-        <a class="a2" href="planos.html"  style="text-decoration: none;    font-family: 'Winter Lemon';">Planos</a>&nbsp
-        <a class="a2"  href="https://discord.gg/eJHfMf3xRH"  style="text-decoration: none;    font-family: 'Winter Lemon';">discord</a>&nbsp
-        
+        <img src="imagens/EPPbranco.png" alt="Logo EPP Divulgações">
+       <br>
+        <a href="menu.html">Inicio</a>
+        <a href="planos.html">Planos</a>
+        <a href="https://discord.gg/eJHfMf3xRH" target="_blank" rel="noopener noreferrer">Discord</a>
     </div>
+
     <div class="container">
-        <h1 style=" font-family: 'Winter Lemon', cursive;">💼 Sobre</h1>
+        <h1>💼 Sobre</h1>
 
         <h2>Quem somos</h2>
-        <p style="text-align: center;">Somos uma comunidade iniciante focada em divulgação de conteúdo e interação.</p>
+        <p style="text-align: center;">
+            Somos uma comunidade iniciante focada em divulgação de conteúdo e interação.
+        </p>
 
         <div class="section">
             <h3 class="section-title">📢 Onde você pode divulgar</h3>
