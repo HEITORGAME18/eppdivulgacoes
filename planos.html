@@ -1,91 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planos</title>
-    <link rel="icon" href="EPPpreto.png">
-    <style>
-@media (max-width: 480px) {
-    main {
-        padding: 15px;
-        margin: 20px;
-    } }
-.planos {
-  margin-top: 90px;
-}
-     a    {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 10px;
-     }
-.menu {
-    height: 150px;
-    background-color: rgb(0, 0, 0);
-    top: 60px;
-    text-shadow: 1px 1px 90px rgb(255, 255, 255);
-    text-align: center;
-}
-body {
-   background-color: rgb(245, 173, 121);
-     width: 1.6;
-    height: 0 auto;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-        .container1 {
-            background-color: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .menu a {
-      color: var(--branco);
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planos - EPP divulgações</title>
+  <link rel="icon" href="imagens/EPPbranco.png" />
+  <style>
+    @font-face {
+      font-family: 'Winter Lemon';
+      src: url('assets/Winter Lemon.ttf') format('truetype');
+    }
+
+    body {
+      background-color: #111;
+      margin: 0;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    .menu {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .menu img {
+      width: 90px;
+    }
+
+    .menu a {
+      color: #fff;
       font-weight: bold;
       text-decoration: none;
       margin: 0 15px;
       padding: 8px 12px;
       transition: background 0.3s, color 0.3s;
       border-radius: 5px;
+      font-family: 'Winter Lemon', cursive;
     }
 
     .menu a:hover {
       background-color: #ffffff20;
     }
-    @font-face {
-  font-family: 'Winter Lemon';
-  src: url('Winter\ Lemon.ttf') format('truetype');
-}
 
-    </style>
+    h1, h2 {
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Winter Lemon', cursive;
+      color: #ffb380;
+    }
+
+    main {
+      max-width: 700px;
+      width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .plano {
+      background: #2c2c2c;
+      padding: 25px 20px;
+      border-left: 6px solid #ff7f50;
+      border-radius: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffb380;
+      font-family: 'Winter Lemon', cursive;
+      cursor: default;
+      user-select: none;
+    }
+
+    .descricao {
+      margin-top: 10px;
+      font-size: 1em;
+      font-weight: normal;
+      color: #ddd;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+      line-height: 1.5;
+    }
+
+    .end {
+      background-color: #000;
+      color: white;
+      padding: 30px 10px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .end img {
+      width: 50px;
+      border-radius: 30px;
+      margin: 10px auto;
+    }
+
+    .end .logo {
+      width: 90px;
+    }
+
+    .imb {
+      animation: gire 2s infinite linear;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @keyframes gire {
+      0% { transform: rotateZ(0deg); }
+      100% { transform: rotateZ(360deg); }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 15px;
+        margin: 20px;
+      }
+
+      h1, h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
 </head>
 <body>
-     <div class="menu">
-        <img src="EPPbranco.png" alt="uma foto de epp Divulgações!" width="90px" >
-        <div class="a1">
-        <a style=" font-family: 'Winter Lemon'; color: white;" class="a2" href="index.html" style="text-decoration: none; color: white;">inicio</a>&nbsp
-        <a style=" font-family: 'Winter Lemon'; color: white;" class="a2" href="planos.html" style="text-decoration: none; color: white;">Planos</a>&nbsp
-        <a style=" font-family: 'Winter Lemon'; color: white;" class="a2" href="https://discord.gg/eJHfMf3xRH" target="_blank" style="text-decoration: none; color: white;">discord</a>&nbsp
-        
-    </div>
-    <div class="planos">
-        <h1 style=" font-family: 'Winter Lemon';">💼 Planos de Servidores</h1>
+  <div class="menu">
+    <img src="imagens/EPPbranco.png" alt="EPPbranco" />
+    <br />
+    <a href="menu.html">Inicio</a>
+    <a href="planos.html">Planos</a>
+    <a href="https://discord.gg/eJHfMf3xRH">Discord</a>
+  </div>
 
-        <div class="container1">
-            <h2 style=" font-family: 'Winter Lemon';">💎 Plano Patrocinador — $14,99</h2>
-            <ul>
-                <li>📢 3 meses de divulgação do seu servidor</li>
-                <li>🏅 Cargo exclusivo de Patrocinador</li>
-                <li>👑 Cargo VIP Gold</li>
-                <li>🎁 Premium para 2 amigos</li>
-                <li>🚀 Prioridade em eventos e sorteios</li>
-                <li>🎫 Acesso antecipado a novidades e atualizações</li>
-                <li>🧩 Participação em testes de novos sistemas</li>
-                <li>💬 Canal exclusivo com a equipe</li>
-                <li>🌐 Link fixado em parcerias especiais (em destaque)</li>
-            </ul>
-        </div>
+  <h1>Planos</h1>
+
+  <main>
+    <div class="plano">
+      Plano Redes 4.99$
+      <div class="descricao">
+        Divulgação focada em redes sociais, para aumentar seu alcance e engajamento.
+      </div>
     </div>
+    <div class="plano">
+      Plano Servidores 4.99$
+      <div class="descricao">
+        Ideal para servidores de jogos e comunidades, atraia novos membros facilmente.
+      </div>
+    </div>
+    <div class="plano">
+      Plano Empresas 4.99$
+      <div class="descricao">
+        Para empresas que desejam ampliar sua visibilidade e fortalecer sua marca.
+      </div>
+    </div>
+  </main>
+
+  <div class="end">
+    <h2>Redes sociais</h2>
+    <a href="https://discord.gg/eJHfMf3xRH">
+      <img class="imb" src="imagens/discord.png" alt="Discord" />
+    </a>
+    <hr />
+    <img class="logo" src="imagens/EPPbranco.png" alt="EPPbranco" />
+    <p><strong>© 2025 EPP divulgações - Todos os direitos reservados.</strong></p>
+    <hr />
+  </div>
 </body>
 </html>
